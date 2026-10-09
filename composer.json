@@ -1,0 +1,15 @@
+{
+    "name": "alphaquantum/selldatatoai",
+    "description": "PHP client for the Data Asset Score API from selldatatoai.com: score company domains 0 to 100 for the data AI buyers want, singly or in batches of 100.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["sell data to ai", "data asset score", "ai training data", "ai data broker", "company data api", "lead scoring", "firmographics", "technographics"],
+    "homepage": "https://www.selldatatoai.com",
+    "support": {
+        "docs": "https://www.selldatatoai.com/api/",
+        "source": "https://github.com/explainableaixai/selldatatoai-php"
+    },
+    "authors": [{"name": "Alpha Quantum", "email": "info@alpha-quantum.com", "homepage": "https://www.selldatatoai.com"}],
+    "require": {"php": ">=7.4", "ext-curl": "*", "ext-json": "*"},
+    "autoload": {"psr-4": {"SellDataToAI\\": "src/"}}
+}
