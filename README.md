@@ -17,13 +17,13 @@ Add the repository to `composer.json` and require the package:
         {"type": "vcs", "url": "https://github.com/explainableaixai/selldatatoai-php"}
     ],
     "require": {
-        "alphaquantum/selldatatoai": "^1.0"
+        "selldatatoai/selldatatoai": "^1.0"
     }
 }
 ```
 
 ```bash
-composer update alphaquantum/selldatatoai
+composer update selldatatoai/selldatatoai
 ```
 
 Without Composer, copy `src/` into your project and include the two files:

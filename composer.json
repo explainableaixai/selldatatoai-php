@@ -1,5 +1,5 @@
 {
-    "name": "alphaquantum/selldatatoai",
+    "name": "selldatatoai/selldatatoai",
     "description": "PHP client for the Data Asset Score API from selldatatoai.com: score company domains 0 to 100 for the data AI buyers want, singly or in batches of 100.",
     "type": "library",
     "license": "MIT",
