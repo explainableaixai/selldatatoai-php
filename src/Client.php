@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace SellDataToAI;
 
 /**
- * Client for the Data Asset Score API at https://www.selldatatoai.com/api/
+ * Client for the AI Data Value Score API at https://www.selldatatoai.com/api/
  * Uses ext-curl and ext-json only. Every method returns the decoded JSON as an array.
  */
 final class Client
 {
-    public const VERSION = '1.0.0';
+    public const VERSION = '1.0.1';
     public const DEFAULT_BASE = 'https://www.selldatatoai.com/api/v1';
     public const BATCH_MAX = 100;
 

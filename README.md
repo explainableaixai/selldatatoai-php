@@ -1,6 +1,6 @@
 # selldatatoai-php
 
-PHP client for the [Data Asset Score by Sell Data to AI](https://www.selldatatoai.com/). It asks one question about a company website, how much of the data AI buyers want does this company likely hold, and returns the answer as a score from 0 to 100 with the evidence behind it.
+PHP client for the [AI Data Value Score by Sell Data to AI](https://www.selldatatoai.com/). It asks one question about a company website, how much of the data AI buyers want does this company likely hold, and returns the answer as a score from 0 to 100 with the evidence behind it.
 
 - PHP 7.4 or newer, with `ext-curl` and `ext-json`.
 - No Composer dependencies.
@@ -89,14 +89,14 @@ Key by key:
 - `data_asset_score`: 0 to 100. `grade`: A to E from the score.
 - `status`: `active`, `winding_down_or_acquired`, `parked`, `unreachable` or `error`.
 - `verified_active`: the domain resolves, is not expired and the site is not a parking or error page.
-- `iab_category` and `country`: from an index of 102 million domains, 99.99% of the active internet.
+- `iab_category` and `country`: from an index of 120 million domains, 99.99% of the active internet.
 - `history`: first year seen, years online, stated founding year and years online before 2023.
 - `data_systems`: systems of record the company runs, each with the record type it holds.
 - `likely_data_assets`: record types the company probably holds.
 - `data_coverage`: `full`, `partial` or `limited`.
 - `cached`: the result was taken in the last 30 days.
 
-The [Data Asset Score API reference](https://www.selldatatoai.com/api/) documents every field and endpoint.
+The [AI Data Value Score API reference](https://www.selldatatoai.com/api/) documents every field and endpoint.
 
 ## Methods
 
@@ -245,7 +245,7 @@ Company owners who want to know where they stand, before any broker calls, can [
 
 ## Lists are separate
 
-The API scores the domains you send. It never returns lists. Sector files are sold once, each with the top 3,000 US companies by score, from $249 a list. The [company lists by sector](https://www.selldatatoai.com/lists/) page shows all of them, for example the [financial services companies list](https://www.selldatatoai.com/lists/financial-services/). Download links arrive by email and work for 30 days, up to 5 downloads per file.
+The API scores the domains you send. It never returns lists. Sector files are sold once, each with the top 3,000 US companies by score, from $199 a list. The [company lists by sector](https://www.selldatatoai.com/lists/) page shows all of them, for example the [financial services companies list](https://www.selldatatoai.com/lists/financial-services/). Download links arrive by email and work for 30 days, up to 5 downloads per file.
 
 ## Plans
 
@@ -271,7 +271,7 @@ A few habits keep costs predictable and pages fast:
 
 ### What is selldatatoai-php?
 
-selldatatoai-php is the PHP client for the Data Asset Score API at selldatatoai.com. It scores company websites from 0 to 100 for the data AI buyers want and returns arrays with grade, status, data systems, likely data assets and history.
+selldatatoai-php is the PHP client for the AI Data Value Score API at selldatatoai.com. It scores company websites from 0 to 100 for the data AI buyers want and returns arrays with grade, status, data systems, likely data assets and history.
 
 ### Does it need Guzzle?
 
